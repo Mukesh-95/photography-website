@@ -1,0 +1,493 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body{
+    background-color: #FAF7F3;
+    overflow-x: hidden;
+    font-family: "Winky Rough", sans-serif;
+}
+
+/* Header Section */
+/*Nav Bar*/
+.head-content {
+  background-color: #f0dfc9;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* more natural */
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1100; /* keeps it clickable */
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: black; /* fixed (white was invisible on light bg) */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  font-family: "Grand Hotel", cursive;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 28px;
+}
+
+.logo img {
+  margin-top: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-menu li {
+  font-size: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #faf7f3;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*Image Slider*/
+.slider {
+  height: 650px;
+}
+
+.slides{
+  display: flex;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;  
+}
+
+.slide img {
+  width: 100%;   
+  height: 100%;      
+  object-fit: cover;      
+}
+
+@keyframes autoplay {
+  0%   { transform: translateX(0%); }
+  10%  { transform: translateX(0%); }
+  20%  { transform: translateX(-100%); }
+  30%  { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  50%  { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  70%  { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  90%  { transform: translateX(-400%); }
+  100% { transform: translateX(-400%); }
+}
+
+.slides {
+   animation: autoplay 16s infinite; 
+}
+
+/*Body Section*/
+/* 1st Part */
+.body-content-1 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.booking-content {
+  margin: 30px 0px;
+  padding:  0px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.booking-head-content {
+  color: #f3d5ab ;
+  font-family: "Faculty Glyphic", sans-serif;
+  text-align: center;
+  margin: 20px 0px;
+}
+.booking-body-content{
+  font-size: 15px;
+}
+.booking-form {
+  height: 440px;
+  width: 330px;
+  padding: 15px;
+  margin: 30px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.booking-form .booking-form-head {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.booking-elements {
+  margin-bottom: 15px;
+}
+.booking-elements input,
+select {
+  width: 100%;
+  height: 35px;
+}
+.booking-submit {
+  display: flex;
+  justify-content: center;
+}
+button {
+  all: unset;
+  border: 1px solid black;
+  background-color:#F0E4D3;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* 2nd Part */
+.body-content-2 {
+  padding-bottom: 20px;
+}
+.body-content-2 h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: "Amarante", serif;
+}
+.info-content {
+  padding: 10px 200px;
+}
+
+/* Grid layout for all cards */
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* always 5 cards in a row */ 
+  gap: 10px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #f0dfc9;
+  border: 1px solid black;
+  border-radius: 7px;
+  height: 160px;
+  width: 150px;   /* fixed width so exactly 5 fit */
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Body Part-3 */
+.body-content-3 {
+  padding-bottom: 40px;
+}
+
+.body-content-3 h1 {
+  text-align: center;
+  font-family: "Amarante", serif;
+  margin-bottom: 30px;
+}
+
+/* Photo Grid */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row on desktop */
+  gap: 30px;
+  margin-left: 100px;
+}
+
+.photos {
+  transition: all 0.3s;
+}
+
+.photos img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 300px;
+  width: 100%;
+  max-width: 570px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.photos img:hover {
+  transform: scale(1.05);
+}
+/*Body content 4*/
+.body-content-4{
+  margin-bottom: 30px;
+
+}
+.body-content-4 h1{
+  text-align: center;
+  font-family: "Amarante", serif;
+  margin-bottom: 30px;
+}
+.package{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ allows wrapping for smaller screens */
+  gap: 60px;
+}
+.package-card{
+  box-shadow: 10px 5px 5px rgb(228, 225, 215);
+  height: 350px;
+  width: 300px;
+  background-color: #f0dfc9;
+  padding: 15px;
+  transition: 0.5s ease;
+  font-family: "Faculty Glyphic", sans-serif;
+  display: flex;              /* enable flex layout */
+  flex-direction: column;     /* stack items vertically */
+  justify-content: space-between;
+}
+
+.package-card h2{
+  font-family: "Amarante", serif;
+}
+
+.package-card:hover{
+  scale: 1.05;
+}
+
+.package-content-head{
+  text-align: center;
+  margin: 5px 0px 10px 0px;
+}
+
+.package-content-body li{
+  margin-left: 25px;
+  margin-bottom: 8px;
+}
+
+.package-content-price{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/* Footer */
+.footer-content{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #F0E4D3;
+  font-family: "Faculty Glyphic", sans-serif;
+  flex-wrap: wrap; /* ✅ allows wrapping */
+  padding: 25px 0px;
+}
+
+.footer-content h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content{
+  width: 470px;
+  max-width: 400px;
+  text-align: start;
+}
+
+.footer-content a{
+  text-decoration: none;
+  color: black;
+}
+
+.social-media a{
+  display: flex;
+  gap: 7px;
+}
+
+.social-media a i{
+  margin-top: 3px;
+}
+
+.copyright{
+  text-align: center;
+  padding: 5px 0px;
+}
+
+/*About Page*/
+.abt-head{
+  margin: 100px 0px 40px 0px;
+  text-align: center;
+  font-family: "Amarante", serif;
+}
+.portfolio {
+  margin-top: 90px; 
+}
+
+.profile-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 20px;
+  flex-wrap: wrap; /* allows wrapping for smaller screens */
+}
+
+.profile-body h1 {
+  margin: 15px 0px;
+  text-align: center;
+  font-family: "Amarante", serif;
+}
+
+.profile-body p {
+  font-size: 20px;
+}
+
+.profile-content {
+  padding: 15px;
+  height: auto;
+  max-width: 600px;
+  box-shadow: 10px 5px 5px rgb(228, 225, 215);
+}
+
+.profile-social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-follow p {
+  font-size: 25px;
+  font-family: "Amarante", serif;
+}
+
+.profile-social img {
+  height: 30px;
+  width: 30px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-img img {
+  margin-top: 25px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 40px;
+  object-fit: contain;
+  border: 2px solid black;
+}
+
+.portfolio-head h1 { 
+  margin: 20px 0 40px 0;
+  text-align: center;
+  font-family: "Amarante", serif;
+}
+
+.portfolios {
+  margin-bottom: 20px;
+}
+
+.portfolio-image {
+  box-shadow: 10px 5px 5px rgb(228, 225, 215);
+  width: 90%;                /* flexible width */
+  max-width: 900px;          /* don’t exceed desktop size */
+  height: 300px;             /* keep aspect ratio on desktop */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  filter: grayscale(1);
+  transition: all 0.5s ease;
+}
+
+.portfolio-image:hover {
+  filter: grayscale(0);
+}
+
+.portfolio-image:hover h2 {
+  opacity: 0;
+}
+
+.portfolio-image h2 {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-family: "Amarante", serif;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  padding: 0 10px; /* prevent text overflow */
+}
+
+.portfolio-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
