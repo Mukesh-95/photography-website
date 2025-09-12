@@ -3,7 +3,7 @@
   margin: 0px;
 }
 body{
-    background-color: #FAF7F3;
+    background-color: #f3f9ed;
     overflow-x: hidden;
     font-family: "Winky Rough", sans-serif;
 }
@@ -11,7 +11,7 @@ body{
 /* Header Section */
 /*Nav Bar*/
 .head-content {
-  background-color: #f0dfc9;
+  background-color: #d1e7b7;
   height: 80px;
   width: 100%;
   display: flex;
@@ -132,7 +132,7 @@ body{
   border: 1px solid black;
 }
 .booking-head-content {
-  color: #f3d5ab ;
+  color: #c5e1a5 ;
   font-family: "Faculty Glyphic", sans-serif;
   text-align: center;
   margin: 20px 0px;
@@ -197,7 +197,7 @@ button {
 
 /* Card Styling */
 .card {
-  background-color: #f0dfc9;
+  background-color: #d1e7b7;
   border: 1px solid black;
   border-radius: 7px;
   height: 160px;
@@ -289,7 +289,7 @@ button {
   box-shadow: 10px 5px 5px rgb(228, 225, 215);
   height: 350px;
   width: 300px;
-  background-color: #f0dfc9;
+  background-color: #d1e7b7;
   padding: 15px;
   transition: 0.5s ease;
   font-family: "Faculty Glyphic", sans-serif;
@@ -326,7 +326,7 @@ button {
 .footer-content{
   display: flex;
   justify-content: space-evenly;
-  background-color: #F0E4D3;
+  background-color: #d1e7b7;
   font-family: "Faculty Glyphic", sans-serif;
   flex-wrap: wrap; /* ✅ allows wrapping */
   padding: 25px 0px;
