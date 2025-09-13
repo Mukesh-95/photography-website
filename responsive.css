@@ -61,7 +61,7 @@
 /* Mobile (<=600px) */
 @media (max-width: 600px) {
   .package { gap: 20px; }
-  .package-card { width: 90%; height: auto; }
+  .package-card { width: 340px; height: auto; }
 }
 
 /* Small mobile (<=500px) */
@@ -79,7 +79,7 @@
 
   /* Cards */
   .card-section { grid-template-columns: repeat(2, 1fr); }
-  .card { height: 120px; }
+  .card { height: 120px; width: 120px; margin-left: 40px ; }
   .card p { font-size: 18px; }
 
   /* About page */
@@ -121,8 +121,6 @@
     max-width: 300px;  
     height: auto; /* maintain aspect ratio */
     border-radius: 8px; 
-
   }
-  
 }
 
